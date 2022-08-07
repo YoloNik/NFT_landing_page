@@ -1,0 +1,176 @@
+header{
+	position: relative;
+display: flex;
+align-items: flex-end;
+padding: 20px 0 0;
+
+
+}
+
+.logo{
+	position: absolute;
+	top: 20px;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	
+
+	&-img{
+		width: 90px;
+		margin-bottom: 8px;		
+	}
+
+	.logoRotate{
+		position: absolute;
+		top: 0;
+		left: 0;
+		animation-name: logoRotate;
+		animation-duration: 1s;
+		animation-fill-mode:forwards;
+		
+	}
+	@keyframes logoRotate {
+		0%{
+		}
+		100%{
+			transform: rotate(360deg);
+			left:35vw;
+		}
+	}
+	.titleMove{
+		animation-name: titleMove;
+		animation-duration: 1s;
+		animation-delay:0.2s;
+		animation-fill-mode:forwards;
+		position: absolute;
+		top:80px;
+		left: 0;
+		@keyframes titleMove {
+		0%{
+		}
+		100%{
+			left:34vw;
+		}
+	}
+}
+
+}
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;	
+
+	&-link:hover{
+		color: var(--primary);
+		cursor: pointer;
+	}
+}
+
+.humburger{
+	position: absolute;
+	top: 20px;
+	right: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	& .line{
+		display: block;
+		width: 44px;
+		height: 3px;
+		background-color: var(--white);
+		margin-block: 8px;
+		border-radius: 4px;
+		transition: transform .5s;
+		opacity: .25s;
+	}
+
+	&.close .line:nth-child(1){
+		transform: translateY(15px) rotate(45deg);
+	}
+	&.close .line:nth-child(2){
+		opacity: 0;;
+	}
+	&.close .line:nth-child(3){
+		transform: translateY(-15px) rotate(-45deg);
+	}
+}
+.menu.is-close{
+opacity: 0;
+margin-bottom: 50px;
+}
+.menu.is-open{
+	animation-name: opacityMenu;
+	animation-duration: 1s;
+	animation-fill-mode:forwards;
+}
+@keyframes opacityMenu{
+	0%{
+		opacity: 0;
+		margin-bottom: 50px;
+	}
+	80%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 1;
+		margin-bottom: 90px;
+	}
+}
+
+.search{
+	position: absolute;
+	top:75px;
+	right: 20px;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+	
+	width: 60%;
+	height: 35px;
+
+	
+
+	&-icon{
+		position: absolute;
+		top: 6px;
+		left: 10px;
+
+		width: 23px;
+		height: 23px;
+	}
+	&-input{
+		width: 100%;
+		height: 35px;
+		background: rgba(255, 255, 255, 0.2);
+		border: 1px solid #00E0FF;
+		border-radius: 48px;
+		padding-left: 40px;
+	}
+}
+.moveSearch{
+	position: absolute;
+	right: 0;
+	opacity: 1;
+	animation-name: moveSearch;
+	animation-duration: 1s;
+	animation-fill-mode:forwards;
+	
+	}
+	@keyframes moveSearch {
+		0%{
+			top:75px;
+			margin-bottom: 20px;
+		}
+		50%{
+			width: 50%;
+		}
+		100%{
+			top: 130px;
+			width: 100%;
+			}
+	}
