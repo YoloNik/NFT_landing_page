@@ -290,7 +290,7 @@ header {
   }
 }
 .hero {
-  background-image: url(../img/bg-fons/hero-bg.png), url(../img/bg-fons/hero-stars-bg.png), url(../img/bg-fons/blur-vector.png);
+  background-image: url(../img/bg-fons/hero-bg.webp), url(../img/bg-fons/hero-stars-bg.webp), url(../img/bg-fons/blur-vector.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -459,7 +459,7 @@ header {
 
 .auctions {
   position: relative;
-  background-image: url(../img/bg-fons/auctions-bg.png);
+  background-image: url(../img/bg-fons/auctions-bg.webp);
   background-position: center;
   padding-top: 30px;
 }
@@ -620,7 +620,7 @@ header {
 .work {
   position: relative;
   margin-top: 40px;
-  background-image: url(../img/bg-fons/work-bg.png);
+  background-image: url(../img/bg-fons/work-bg.webp);
   background-position: center;
 }
 .work-info {
@@ -693,7 +693,7 @@ header {
 
 .best-selling {
   position: relative;
-  background-image: url(../img/bg-fons/best-selling-bg.png);
+  background-image: url(../img/bg-fons/best-selling-bg.webp);
   background-position: center;
 }
 
@@ -743,7 +743,7 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 10px;
-  background-image: url(../../img/bg-fons/creators-bg.png);
+  background-image: url(../img/bg-fons/creators-bg.webp);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -850,7 +850,7 @@ header {
 }
 .category {
   position: relative;
-  background-image: url(../img/bg-fons/category-bg.png);
+  background-image: url(../img/bg-fons/category-bg.webp);
   background-position: center;
   margin-top: 30px;
 }
@@ -936,7 +936,7 @@ header {
 
 footer {
   position: relative;
-  background-image: url(../img/bg-fons/footer-bg.png);
+  background-image: url(../img/bg-fons/footer-bg.webp);
   background-position: center;
   padding: 0 6.25%;
   margin-top: 30px;
