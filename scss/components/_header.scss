@@ -3,14 +3,12 @@ header{
 display: flex;
 align-items: flex-end;
 padding: 20px 0 0;
-
-
 }
 
 .logo{
 	position: absolute;
 	top: 20px;
-	left: 0;
+	left: 20px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -72,7 +70,7 @@ padding: 20px 0 0;
 .humburger{
 	position: absolute;
 	top: 20px;
-	right: 0;
+	right: 20px;
 	background-color: transparent;
 	border: none;
 	outline: none;

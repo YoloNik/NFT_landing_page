@@ -9,8 +9,7 @@ body{
 	line-height: 21px;
 	color: var(--white);
 	background-color: var(--mainBgCollor);
-	padding: 0 calc((120px/1920px)*100%);
-	
+
 }
 
 h1,h2,h3,h4,h5,h6,p,li,ul,a{
@@ -28,6 +27,6 @@ h1,h2,h3,h4,h5,h6{
 	color: var(--primary);
 }
 
-img,svg{
-	width: 50%;
+header, footer, section{
+	padding: 0 calc((120px/1920px)*100%);
 }
