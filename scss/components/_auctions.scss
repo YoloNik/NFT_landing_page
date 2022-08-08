@@ -4,14 +4,15 @@
 	background-position: center;
 	padding-top: 30px;
 	&-info{
-		width: 70%;
-		margin: 0 auto;
+		margin: 0 auto 12px;
 		&_title{
+			font-size: 24px;
 			text-align: center;
 			margin-bottom: 8px;
 		}
 		&_description{
 			margin-left: auto;
+			margin-right: 10%;
 			width: 120px;
 			padding: 5px 0;
 			opacity: 0.7;
@@ -26,38 +27,27 @@
 		}
 	}
 }
-//.text{
-//	height: 380px;
-//}
 
-//.scaleY-nft{
-//	height: 380px;
-//}
 .auctions_list{
 	position: relative;
-	z-index: 3;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	gap: 30px;
-//& li:nth-child(2) img{
-//	height: 380px;
-//}
-	
+
 	.nft-lot{
-		z-index: 1;
+		//z-index: 1;
 		overflow: hidden;
 		border-radius: 16px;
 		outline: 1px solid var(--white);
 		background-color: var(--secound);
 		padding: 5px;
-		width: 100%;
+		width: 280px;
 		height: 390px;
 
 		.nft-lot_img{
 			position: relative;
-			overflow: hidden;
 			width: 100%;
 			height: 100%;
 			border-radius: 16px;
@@ -68,11 +58,8 @@
 			justify-content: space-between;
 		}
 		.lot-description{
-			position: absolute;
 			padding: 10px 10px 0;
-			//opacity: 0;
-			
-			
+
 			transition: transform 500ms cubic-bezier(0.215, 0.610, 0.355, 1),
 			opacity 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 		}
@@ -108,7 +95,7 @@
 		.lot-description_separator{
 			width: 100%;
 			height: 1px;
-			margin: 10px 0;
+			margin: 5px 0;
 			opacity: 0.3;
 			background-color: var(--white);
 		}
@@ -129,12 +116,11 @@
 			inset 4px 4px 19px rgba(255, 255, 255, 0.15);
 			outline-color: var(--primary);
 			.nft-lot_img{
-				transform: scaleY(0.6) translateY(-80px)
+				transform: scaleY(0.7) translateY(-80px)
 				
 			}
 			.lot-description{
-				//opacity: 1;
-				transform: translateY(-210px);
+				transform: translateY(-198px);
 			}
 			.lot-description_title{
 				color: var(--primary);

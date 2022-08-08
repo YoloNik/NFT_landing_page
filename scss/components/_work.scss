@@ -1,4 +1,69 @@
 .work{
+	position: relative;
+	margin-top: 40px;
 	background-image: url(../img/bg-fons/work-bg.png);
 	background-position: center;
+
+	&-info{
+		margin: 0 auto 12px;
+		&_title{
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 8px;
+		}
+		&_description{
+			margin-right: auto;
+			margin-left: 22%;
+			width: 110px;
+			padding: 5px 0;
+			opacity: 0.7;
+			border-top: 1px solid var(--white);
+		}
+		.section-name{
+			position: absolute;
+			top:45px;
+			right: 0;
+			opacity: 0.1;
+			font-size: 40px;
+		}
+	}
+}
+
+.work-stages-list{
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+	align-items: center;
+	gap: 30px;
+
+	.work-stages-item{
+		border: 1px solid var(--primary);
+		background-color: var(--secound);
+		box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.1);
+		border-radius: 16px;
+		z-index: 1;
+		width: 280px;
+
+		&:hover{
+			box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);
+			.work-stages-item_img{
+				fill:#00BED8;
+			}
+		}
+
+		&_img{
+			width: 100px;
+			height: 100px;
+
+			margin-top: 20px;
+			fill: #008294;
+		}
+		&_title{
+			font-size: 24px;
+		}
+		&_description{
+			opacity: .5;
+			padding: 20px;
+		}
+	}
 }

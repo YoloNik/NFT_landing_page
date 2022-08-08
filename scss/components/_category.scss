@@ -1,4 +1,81 @@
 .category{
+	position: relative;
 	background-image: url(../img/bg-fons/category-bg.png);
 	background-position: center;
+	margin-top: 30px;
+
+	.category-info{
+		margin: 0 auto 12px;
+
+		&_title{
+			font-size: 24px;
+			text-align: center;
+			margin-bottom: 8px;
+		}
+		&_description{
+			margin-right: auto;
+			margin-left: 13%;
+			width: 110px;
+			padding: 5px 0;
+			opacity: 0.7;
+			border-top: 1px solid var(--white);
+		}
+		.section-name{
+			position: absolute;
+			top:45px;
+			right: 0;
+			opacity: 0.1;
+			font-size: 40px;
+		}
+	}
+}
+
+.category-list{
+	display: flex;
+	//flex-direction: column;
+	flex-wrap: wrap;
+	align-items: center;
+	//justify-content: space-around;
+	gap: 20px;
+
+	&-item{
+		position: relative;
+		width: calc((100% - 20px)/2);
+		border: 1px solid rgba(255, 255, 255, 0.5);
+		backdrop-filter: blur(12px);
+		box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);
+		border-radius: 16px;
+		overflow: hidden;
+		
+		&:hover{
+			border-color: var(--primary);
+			box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.15);
+			.category-list-item_img{
+				transform: scale(1.2);
+			}
+			.category-list-item_name{
+				color: var(--primary);
+			}
+		}
+		&_img{
+			width: 100%;
+			height: 100%;
+			border-radius: 16px;
+			padding: 5px 5px 0 5px;
+			transition: transform 250ms cubic-bezier(0.39, 0.575, 0.565, 1)
+		}
+		&_name{
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			padding: 5px 10px;
+			background: rgba(255, 255, 255, 0.1);
+			backdrop-filter: blur(12px);
+			
+			border-radius: 0px 0px 15px 15px;
+			
+		}
+	}
+
 }
