@@ -1,15 +1,22 @@
 .work{
 	position: relative;
-	margin-top: 40px;
+	padding-top: 40px;
 	background-image: url(../img/bg-fons/work-bg.webp);
 	background-position: center;
-
+	background-size: 100% 100%;
+		@media screen and (min-width:1024px) {
+			padding-top: 60px ;
+			padding-bottom: 60px;;
+		}
 	&-info{
 		margin: 0 auto 12px;
 		&_title{
 			font-size: 24px;
 			text-align: center;
 			margin-bottom: 8px;
+			@media screen and (min-width:1024px) {
+				font-size: 40px;
+			}
 		}
 		&_description{
 			margin-right: auto;
@@ -18,13 +25,16 @@
 			padding: 5px 0;
 			opacity: 0.7;
 			border-top: 1px solid var(--white);
+			@media screen and (min-width:1024px) {
+				width: 16%;
+			}
 		}
 		.section-name{
 			position: absolute;
-			top:45px;
+			top:90px;
 			right: 20px;
 			opacity: 0.1;
-			font-size: 40px;
+			font-size: 75px;
 		}
 	}
 }
@@ -32,9 +42,20 @@
 .work-stages-list{
 	display: flex;
 	flex-direction: column;
+	justify-content: center;
 	text-align: center;
 	align-items: center;
 	gap: 30px;
+	@media screen and (min-width:768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		
+	}
+	@media screen and (min-width:1024px) {
+		flex-wrap: nowrap;
+		gap: 10px
+	}
+	
 
 	.work-stages-item{
 		border: 1px solid var(--primary);
@@ -43,6 +64,10 @@
 		border-radius: 16px;
 		z-index: 1;
 		width: 280px;
+
+		@media screen and (min-width:1366px) {
+			width: calc((100% - 30px) / 4);
+		}
 
 		&:hover, &:focus{
 			box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);

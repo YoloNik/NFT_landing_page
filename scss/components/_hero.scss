@@ -1,18 +1,33 @@
 .hero{
+	position: relative;
 	background-image: url(../img/bg-fons/hero-bg.webp), 
 	url(../img/bg-fons/hero-stars-bg.webp), 
 	url(../img/bg-fons/blur-vector.webp);
 	background-position: center;
-	background-repeat: no-repeat;
-	background-size: contain;
-}
+	background-size: cover;
+	@media screen and (min-width:1024px) {
+		padding-top: 60px ;
+		padding-bottom: 60px;;
+		}
+	
 
+	.nft{
+		color: var(--primary);
+	}
+}
 .hero-info{
 	text-align: center;
 	display: flex;
 	flex-direction: column;
+	padding-top: 20px;
 	gap: 20px;
+	
 
+	@media screen and (min-width:1024px) {
+		width: 50%;
+		
+		margin: 0 auto;
+		}
 	.hero-title{
 		opacity: 0.9;
 		font-size: 35px;
@@ -24,8 +39,9 @@
 }
 
 .button-box{
+	width: 100%;
 	.hero-btn{
-		width: 123px;
+		width: 40%;
 		height: 50px;
 		background: linear-gradient(180deg, rgba(0, 190, 216, 0.2) 0%, rgba(0, 130, 148, 0.2) 100%);
 		border-radius: 4px 16px;
@@ -40,11 +56,61 @@
 	}
 	& :first-child{
 		border-radius: 16px 4px;
-		margin-right: 30px;
-		
+		margin-right: 30px;	
 	}
-	& :last-child{
+}
+
+.header-box-for-img{
+	position: relative;
+}
+.header-donut{
+	display: none;
+	border: 1px solid  #F0FFFF;
+  border-radius: 150px;
+  height:80px;
+  width:80px;
+  box-shadow: inset var(--primary) 0 0 20px 5px,
+              var(--primary) 0 0 22px 7px;
+	@media screen and (min-width:768px) {
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		animation-name: donut-blink;
+		animation-timing-function: cubic-bezier(0.445, 0.05, 0.55, 0.95);
+		animation-duration: 4s;
+		animation-iteration-count: infinite;
 	}
+	@keyframes donut-blink {
+		0%{
+
+		}
+		100%{
+			filter: hue-rotate(360deg);
+
+		}
+	}
+
+	.circle{
+		animation-name: circle-blink;
+		animation-timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+		animation-duration: 2s;
+		animation-iteration-count: infinite;
+	}
+	@keyframes circle-blink {
+		0%{
+
+		}
+		100%{
+			filter: hue-rotate(360deg);
+
+		}
+	}
+	@media screen and (min-width:1024px) {
+		display: none;
+	}
+
 }
 
 .nft-box{
@@ -52,14 +118,65 @@
 	flex-direction: column;
 	align-items: center;
 	gap: 30px;
-	margin-top: 40px;
+	margin-top: 30px;
+
+	@media screen and (min-width:768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	@media screen and (min-width:1024px) {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		gap: 10px;
+	}
 }
 .nft-img{
 	position: relative;
-	opacity: 0.5;
+	opacity: 0.6;
+
 	overflow: hidden;
 	width: 280px;
 	height: 380px;
+
+	&:nth-child(2n){
+		@media screen and (min-width:768px) {
+			transform: scaleX(-1);
+			.nft-title, .nft-description, .nft-price, .nft-img-timer{
+				transform: scaleX(-1);
+			}
+		}
+		@media screen and (min-width:1024px) {
+			transform: scaleX(1);
+			.nft-title, .nft-description, .nft-price, .nft-img-timer{
+				transform: scaleX(1);
+			}
+		}
+	}
+	@media screen and (min-width:768px) {
+		&:nth-child(3){
+			transform:  scaleX(-1);
+			.nft-img-timer, .nft-title, .nft-description, .nft-price{
+				transform:  scaleX(-1);
+				justify-content: flex-end;
+			}
+		}
+		&:last-child{
+			transform: scale(1);
+			.nft-img-timer, .nft-title, .nft-description, .nft-price{
+				transform:  scaleX(1);
+			}
+		}
+	}
+
+	@media screen and (min-width:1024px) {
+			width: 100%;
+			height: 100%;
+			&:first-child, &:last-child{
+				transform: translateY(-150px);
+			}
+		}
+	
 	
 	&-timer{
 		position: absolute;
@@ -75,6 +192,7 @@
 		box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.3);
 		backdrop-filter: blur(6px);
 		border-radius: 8px;
+		
 	}
 	.img-clock{
 		width: 20px;
@@ -88,12 +206,15 @@
 	
 	.nft-img-description{
 		position: absolute;
-		transform: translate(16px, -38px);
-		transition: transform 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
-
+		transform: translate(16px, -38px) scale(1);
+		transition:	 transform 250ms cubic-bezier(0.215, 0.610, 0.355, 1);
+		@media screen and (min-width:1024px) {
+			transform: translate(-10px, -38px) scale(0.8);
+		}
 		.nft-title{
-			margin-bottom: 5px;
+			margin-bottom: 15px;
 			color: var(--white);
+			
 			}
 
 		.nft-description{
@@ -115,11 +236,20 @@
 		}
 		.nft-img-description{
 			
-			transform: translate(16px, -85px)
+			transform: translate(16px, -85px);
 		}
 		.nft-title{
 			color: var(--primary);
 			}
+	}
+	@media screen and (min-width:1024px) {
+		&:hover, &:focus{
+
+			.nft-img-description{
+			
+				transform: translate(-10px, -85px) scale(0.8);
+			}
+		}
 	}
 }
 
@@ -129,38 +259,30 @@
 	justify-content: space-around;
 	margin-top: 30px;
 
-	&_left {
+	@media screen and (min-width:1024px) {
+		position: absolute;
+		right: 10%;
+		bottom: 10%;
+		gap:20px
+	}
+	
+	&_left, &_right {
 		svg{
 			width: 120px;
 			height: 25px;
 			opacity: 0.5;
 			fill: var(--primary);
-			
-		}
-		&:hover, &:focus{
-			svg{
-			opacity: 1;
-			}
-			p{
-				color: var(--primary);
-			}
-		}
-	}
-	&_right{
-		svg{
-			width: 120px;
-			height: 25px;
-			opacity: 0.5;
-			fill: var(--primary);
-		}
-		&:hover, &:focus{
-			svg{
-			opacity: 1;
-			}
-			p{
-				color: var(--primary);
-			}
-		}
-	}
+			@media screen and (min-width:1024px) {}
+			width: 80px;
 
+		}
+		&:hover, &:focus{
+			svg{
+			opacity: 1;
+			}
+			p{
+				color: var(--primary);
+			}
+		}
+	}
 }

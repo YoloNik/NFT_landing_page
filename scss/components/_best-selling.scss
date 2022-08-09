@@ -2,6 +2,11 @@
 	position: relative;
 	background-image: url(../img/bg-fons/best-selling-bg.webp);
 	background-position: center;
+	background-size: cover;
+	@media screen and (min-width:1024px) {
+		padding-top: 60px ;
+		padding-bottom: 60px;;
+		}
 	
 }
 
@@ -12,6 +17,9 @@
 		font-size: 24px;
 		text-align: center;
 		margin-bottom: 8px;
+		@media screen and (min-width:1024px) {
+			font-size: 40px;
+		}
 	}
 	&_description{
 		margin-left: auto;
@@ -20,26 +28,50 @@
 		padding: 5px 0;
 		opacity: 0.7;
 		border-top: 1px solid var(--white);
+		@media screen and (min-width:1024px) {
+			width: 17%;
+		}
 	}
 	.section-name{
 		position: absolute;
 		top:60px;
 		left: 20px;
 		opacity: 0.1;
-		font-size: 40px;
+		font-size: 60px;
+		@media screen and (min-width:1024px) {
+			font-size: 75px;
+		}
 	}
 }
 .creators-list{
 	display: flex;
 	flex-direction: column;
 	gap: 20px;
+	@media screen and (min-width:768px) {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-start;
+	}
+	@media screen and (min-width:1366px) {
+		gap: 40px 20px
+	}
+	
 	.creator{
 		position: relative;
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		gap: 10px;
-
+		@media screen and (min-width:768px) {
+			width: calc((100% - 20px)/2);
+		}
+		@media screen and (min-width:1024px) {
+			padding: 20px;
+		}
+		@media screen and (min-width:1366px) {
+			width: calc((100% - 40px)/3);
+			
+		}
 
 		background-image: url(../img/bg-fons/creators-bg.webp);
 		background-size: contain;
@@ -74,6 +106,12 @@
 		&-info{
 			width: 50%;
 			transition: transform 250ms cubic-bezier(0.075, 0.82, 0.165, 1);
+			@media screen and (min-width:568px) {
+				width: 35%;
+			}
+			@media screen and (min-width:768px) {
+				width: 55%;
+			}
 		}
 	}
 }
@@ -93,7 +131,6 @@
 
   background-image: radial-gradient( #0000 calc(66% - 2px), #008294 calc(66% - 1px), #0000 calc(66%));
   filter: drop-shadow(0 0.3125em 0.3125em #008294);
-  /* Масштаб фигуры */
   font-size: clamp(1px, 20px, 5px);
 
 	transform: scale(0.7);

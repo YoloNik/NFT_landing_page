@@ -17,23 +17,25 @@
 
 <body>
 	<header>
-		<nav class="menu is-close" data-menu>
-			<a class="menu-link acsent" href="#">Discover</a>
-			<a class="menu-link " href="#">Market</a>
-			<a class="menu-link " href="#">Explore</a>
-			<a class="menu-link " href="#">Features</a>
-		</nav>
+		<div class="box-for-tablet">
+			<nav class="menu is-close" data-menu>
+				<a class="menu-link acsent" href="#">Discover</a>
+				<a class="menu-link " href="#">Market</a>
+				<a class="menu-link " href="#">Explore</a>
+				<a class="menu-link " href="#">Features</a>
+			</nav>
 
-			<button type="button" class="humburger" data-menu-btn>
-				<span class="line"></span>	
-				<span class="line"></span>
-				<span class="line"></span>
-			</button>
-
-		<div class="logo" >
-			<img class="logo-img"  src="./img/main-logo.webp" alt="logo NINJA" data-logo-img>
-			</img>
-			<h1 class="logo-title" data-logo-title>NINJA</h1>
+				<button type="button" class="humburger" data-menu-btn>
+					<span class="line"></span>	
+					<span class="line"></span>
+					<span class="line"></span>
+				</button>
+		
+			<div class="logo" >
+				<img class="logo-img"  src="./img/main-logo.webp" alt="logo NINJA" data-logo-img>
+				</img>
+				<h1 class="logo-title" data-logo-title>NINJA</h1>
+			</div>
 		</div>
 		<label class="search" data-moveSearch>
 			<svg class="search-icon">
@@ -44,7 +46,6 @@
 	</header>
 
 	<main>
-
 		<section class="hero">
 			<div class="hero-info">
 				<h2 class="hero-title">Discover, Buy & Sell
@@ -59,8 +60,18 @@
 					<button class="hero-btn" type="button">Create</button>
 				</div>
 			</div>
-			<ul class="nft-box">
-				<li class="nft-img">
+
+			<div class="header-box-for-img">
+				<div class="header-donut">
+					<figure class="circle1 orbit1"></figure>
+					<figure class="circle2 orbit2"></figure>
+					<figure class="circle1 orbit3"></figure>
+					<figure class="circle2 orbit4"></figure>
+					<figure class="circle"></figure>
+				</div>
+
+				<ul class="nft-box">
+					<li class="nft-img">
 					<div class="nft-img-timer">
 						<svg class="img-clock">
 							<use href="./img/symbol-defs.svg#icon-clock"></use>
@@ -78,9 +89,9 @@
 							<p>0.45 ETH ($1200)</p>
 						</div>
 					</div>
-				</li>
+					</li>
 
-				<li class="nft-img">
+					<li class="nft-img">
 					<div class="nft-img-timer">
 						<svg class="img-clock">
 							<use href="./img/symbol-defs.svg#icon-clock"></use>
@@ -98,9 +109,9 @@
 							<p>0.45 ETH ($1200)</p>
 						</div>
 					</div>
-				</li>
+					</li>
 
-				<li class="nft-img">
+					<li class="nft-img">
 					<div class="nft-img-timer">
 						<svg class="img-clock">
 							<use href="./img/symbol-defs.svg#icon-clock"></use>
@@ -118,9 +129,9 @@
 							<p>0.45 ETH ($1200)</p>
 						</div>
 					</div>
-				</li>
+					</li>
 
-				<li class="nft-img">
+					<li class="nft-img">
 					<div class="nft-img-timer">
 						<svg class="img-clock">
 							<use href="./img/symbol-defs.svg#icon-clock"></use>
@@ -138,9 +149,9 @@
 							<p>0.45 ETH ($1200)</p>
 						</div>
 					</div>
-				</li>
-			</ul>
-
+					</li>
+				</ul>
+			</div>
 			<div class="arrow-nav">
 				<div class="arrow-nav_left">
 					<p>Prev</p>
@@ -527,10 +538,10 @@
 				</li>
 			</ul>
 		</section>
-
 	</main>
 
 	<footer>
+		
 		<div class="footer-logo-block">
 			<div class="footer-logo" >
 				<img class="logo-img"  src="./img/main-logo.webp" alt="logo NINJA" data-logo-img>
@@ -543,8 +554,8 @@
 			</p>
 	
 		</div>
-		
-		<div class="footer-about-us-box">
+		<div class="footer-tablet-box">
+			<div class="footer-about-us-box">
 		<ul class="about-us-list">
 			<li class="about-us-list_item"><p class="acsent">About Us</p></li>
 			<li class="about-us-list_item"><a href="#">About NINJA</a></li>
@@ -555,10 +566,12 @@
 		<div class="donut">
 			<figure class="circle1 orbit1"></figure>
 			<figure class="circle2 orbit2"></figure>
+			<figure class="circle1 orbit3"></figure>
+			<figure class="circle2 orbit4"></figure>
 			<figure class="circle"></figure>
 		</div>
-	</div>
-	<div class="footer-about-us-box">
+			</div>
+			<div class="footer-about-us-box">
 		<ul class="marketplace-list">
 			<li class="marketplace-list_item"><p class="acsent">Marketplace</p></li>
 			<li class="marketplace-list_item"><a href="#">Discover</a></li>
@@ -567,11 +580,13 @@
 			<li class="marketplace-list_item"><a href="#">Features</a></li>
 		</ul>
 		
-	</div>
-	<div class="footer-about-us-box">
+			</div>
+			<div class="footer-about-us-box">
 		<div class="donut">
 			<figure class="circle1 orbit1"></figure>
 			<figure class="circle2 orbit2"></figure>
+			<figure class="circle1 orbit3"></figure>
+			<figure class="circle2 orbit4"></figure>
 			<figure class="circle"></figure>
 		</div>
 		<ul class="сompany-list">
@@ -581,8 +596,8 @@
 			<li class="сompany-list_item"><a href="#">Terms & Conditions</a></li>
 			<li class="сompany-list_item"><a href="#">Refund Policy</a></li>
 		</ul>
-	</div>
-
+			</div>
+		</div>
 		<ul class="social-list">
 			<li class="social-list_item">
 				<a class="social-link" href="#">
@@ -622,7 +637,7 @@
 		</ul>
 		
 		<div class="copyright">
-			<p>© NINJA Copyright 2021, All rights reserved.
+			<p>© NINJA Copyright 2022, All rights reserved.
 			</p>
 			<div class="autor">
 				<p>Made with <span class="love">love</span> by</p>

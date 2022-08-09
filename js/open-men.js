@@ -16,3 +16,18 @@ function openMenu(e) {
 	logotitle.classList.toggle('titleMove')
 	menuBtn.classList.toggle('close')
 }
+
+window.addEventListener('resize', vwMenu);
+
+function vwMenu(){
+	console.dir(window)
+	if(window.innerWidth >= 425){
+		menu.classList.remove("is-close");
+		menu.classList.add("is-open")
+	}else{
+		menu.classList.add("is-close")
+		menu.classList.remove("is-open");
+	}
+}
+
+vwMenu()

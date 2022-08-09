@@ -9,7 +9,12 @@ body{
 	line-height: 21px;
 	color: var(--white);
 	background-color: var(--mainBgCollor);
-
+	@media screen and (min-width:1024px) {
+		font-size: 18px;
+	}
+	@media screen and (min-width:1366px) {
+		font-size: 20px;
+	}
 }
 
 h1,h2,h3,h4,h5,h6,p,li,ul,a{
@@ -29,4 +34,11 @@ h1,h2,h3,h4,h5,h6{
 
 header, footer, section{
 	padding: 0 calc((120px/1920px)*100%);
+
+	@media screen and (min-width:425px) {
+		padding: 0 calc((220px/1920px)*100%);
+	}
+	@media screen and (min-width:1024px) {
+		padding: 0 calc((70px/1920px)*100%);
+	}
 }
