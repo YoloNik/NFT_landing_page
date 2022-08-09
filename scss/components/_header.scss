@@ -2,7 +2,7 @@ header{
 	position: relative;
 display: flex;
 align-items: flex-end;
-padding: 20px 0 0;
+padding-top: 20px;
 }
 
 .logo{
@@ -136,18 +136,19 @@ margin-bottom: 50px;
 	&-icon{
 		position: absolute;
 		top: 6px;
-		left: 10px;
+		left: 10%;
 
 		width: 23px;
 		height: 23px;
 	}
 	&-input{
-		width: 100%;
+		width: 90%;
 		height: 35px;
 		background: rgba(255, 255, 255, 0.2);
 		border: 1px solid #00E0FF;
 		border-radius: 48px;
-		padding-left: 40px;
+		padding-left: 45px;
+		color: var(--primary);
 	}
 }
 .moveSearch{
