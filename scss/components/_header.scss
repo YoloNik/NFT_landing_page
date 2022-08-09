@@ -61,7 +61,7 @@ padding-top: 20px;
 	justify-content: space-between;
 	align-items: center;	
 
-	&-link:hover{
+	&-link:hover, &-link:focus{
 		color: var(--primary);
 		cursor: pointer;
 	}

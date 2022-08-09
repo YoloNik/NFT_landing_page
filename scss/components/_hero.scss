@@ -15,7 +15,6 @@
 
 	.hero-title{
 		opacity: 0.9;
-		//font-family: Yeseva One, serif;
 		font-size: 35px;
 		line-height: 35px;
 	}
@@ -33,9 +32,10 @@
 		border: 2px solid var(--primary);
 		color: var(--white);
 		cursor: pointer;
-		&:hover{
+		&:hover, &:focus{
 			background: linear-gradient(180deg, #00BED8 0%, #008294 100%);
-			box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
+			box-shadow: inset var(--primary) 0 0 20px 10px,
+              var(--primary) 0 0 14px 6px; 
 		}
 	}
 	& :first-child{
@@ -108,7 +108,7 @@
 		}
 	}
 
-	&:hover{
+	&:hover, &:focus{
 		opacity: 1;
 		.nft-img-timer{
 			opacity: 1;
@@ -137,7 +137,7 @@
 			fill: var(--primary);
 			
 		}
-		&:hover{
+		&:hover, &:focus{
 			svg{
 			opacity: 1;
 			}
@@ -153,7 +153,7 @@
 			opacity: 0.5;
 			fill: var(--primary);
 		}
-		&:hover{
+		&:hover, &:focus{
 			svg{
 			opacity: 1;
 			}

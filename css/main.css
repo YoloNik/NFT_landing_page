@@ -138,7 +138,7 @@ header {
       -ms-flex-align: center;
           align-items: center;
 }
-.menu-link:hover {
+.menu-link:hover, .menu-link:focus {
   color: var(--primary);
   cursor: pointer;
 }
@@ -327,11 +327,11 @@ header {
   color: var(--white);
   cursor: pointer;
 }
-.button-box .hero-btn:hover {
+.button-box .hero-btn:hover, .button-box .hero-btn:focus {
   background: -webkit-gradient(linear, left top, left bottom, from(#00BED8), to(#008294));
   background: linear-gradient(180deg, #00BED8 0%, #008294 100%);
-  -webkit-box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
-          box-shadow: 6px 6px 17px rgba(3, 23, 32, 0.46);
+  -webkit-box-shadow: inset var(--primary) 0 0 20px 10px, var(--primary) 0 0 14px 6px;
+          box-shadow: inset var(--primary) 0 0 20px 10px, var(--primary) 0 0 14px 6px;
 }
 .button-box :first-child {
   border-radius: 16px 4px;
@@ -410,17 +410,17 @@ header {
   display: -ms-flexbox;
   display: flex;
 }
-.nft-img:hover {
+.nft-img:hover, .nft-img:focus {
   opacity: 1;
 }
-.nft-img:hover .nft-img-timer {
+.nft-img:hover .nft-img-timer, .nft-img:focus .nft-img-timer {
   opacity: 1;
 }
-.nft-img:hover .nft-img-description {
+.nft-img:hover .nft-img-description, .nft-img:focus .nft-img-description {
   -webkit-transform: translate(16px, -85px);
           transform: translate(16px, -85px);
 }
-.nft-img:hover .nft-title {
+.nft-img:hover .nft-title, .nft-img:focus .nft-title {
   color: var(--primary);
 }
 
@@ -439,10 +439,10 @@ header {
   opacity: 0.5;
   fill: var(--primary);
 }
-.arrow-nav_left:hover svg {
+.arrow-nav_left:hover svg, .arrow-nav_left:focus svg {
   opacity: 1;
 }
-.arrow-nav_left:hover p {
+.arrow-nav_left:hover p, .arrow-nav_left:focus p {
   color: var(--primary);
 }
 .arrow-nav_right svg {
@@ -451,10 +451,10 @@ header {
   opacity: 0.5;
   fill: var(--primary);
 }
-.arrow-nav_right:hover svg {
+.arrow-nav_right:hover svg, .arrow-nav_right:focus svg {
   opacity: 1;
 }
-.arrow-nav_right:hover p {
+.arrow-nav_right:hover p, .arrow-nav_right:focus p {
   color: var(--primary);
 }
 
@@ -596,25 +596,26 @@ header {
   text-align: center;
 }
 .auctions_list .nft-lot .lot-description_related .person_name_img {
+  width: 50%;
   border-radius: 50%;
 }
 .auctions_list .nft-lot .lot-description_related .person_attitude {
   opacity: 0.5;
 }
-.auctions_list .nft-lot:hover {
+.auctions_list .nft-lot:hover, .auctions_list .nft-lot:focus {
   -webkit-box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);
           box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);
   outline-color: var(--primary);
 }
-.auctions_list .nft-lot:hover .nft-lot_img {
+.auctions_list .nft-lot:hover .nft-lot_img, .auctions_list .nft-lot:focus .nft-lot_img {
   -webkit-transform: scaleY(0.7) translateY(-80px);
           transform: scaleY(0.7) translateY(-80px);
 }
-.auctions_list .nft-lot:hover .lot-description {
+.auctions_list .nft-lot:hover .lot-description, .auctions_list .nft-lot:focus .lot-description {
   -webkit-transform: translateY(-198px);
           transform: translateY(-198px);
 }
-.auctions_list .nft-lot:hover .lot-description_title {
+.auctions_list .nft-lot:hover .lot-description_title, .auctions_list .nft-lot:focus .lot-description_title {
   color: var(--primary);
 }
 
@@ -671,11 +672,11 @@ header {
   z-index: 1;
   width: 280px;
 }
-.work-stages-list .work-stages-item:hover {
+.work-stages-list .work-stages-item:hover, .work-stages-list .work-stages-item:focus {
   -webkit-box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);
           box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), inset -4px -4px 26px rgba(20, 89, 117, 0.2), inset 4px 4px 19px rgba(255, 255, 255, 0.15);
 }
-.work-stages-list .work-stages-item:hover .work-stages-item_img {
+.work-stages-list .work-stages-item:hover .work-stages-item_img, .work-stages-list .work-stages-item:focus .work-stages-item_img {
   fill: #00BED8;
 }
 .work-stages-list .work-stages-item_img {
@@ -750,18 +751,18 @@ header {
   background-position: center;
   z-index: 1;
 }
-.creators-list .creator:hover .creator-img {
+.creators-list .creator:hover .creator-img, .creators-list .creator:focus .creator-img {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
   outline: 1px solid var(--primary);
   -webkit-box-shadow: inset var(--primary) 0 0 40px 10px, var(--primary) 0 0 24px 12px;
           box-shadow: inset var(--primary) 0 0 40px 10px, var(--primary) 0 0 24px 12px;
 }
-.creators-list .creator:hover .creator-info {
+.creators-list .creator:hover .creator-info, .creators-list .creator:focus .creator-info {
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
 }
-.creators-list .creator:hover .orbit {
+.creators-list .creator:hover .orbit, .creators-list .creator:focus .orbit {
   opacity: 1;
   -webkit-transform: scale(1);
           transform: scale(1);
@@ -901,16 +902,16 @@ header {
   border-radius: 16px;
   overflow: hidden;
 }
-.category-list-item:hover {
+.category-list-item:hover, .category-list-item:focus {
   border-color: var(--primary);
   -webkit-box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.15);
           box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.15);
 }
-.category-list-item:hover .category-list-item_img {
+.category-list-item:hover .category-list-item_img, .category-list-item:focus .category-list-item_img {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
-.category-list-item:hover .category-list-item_name {
+.category-list-item:hover .category-list-item_name, .category-list-item:focus .category-list-item_name {
   color: var(--primary);
 }
 .category-list-item_img {
@@ -970,7 +971,7 @@ footer {
   transition: all 0.6s ease;
 }
 
-.logo-title:hover {
+.logo-title:hover, .logo-title:focus {
   -webkit-box-shadow: inset #57A8FA 0 0 40px 10px, #57A8FA 0 0 24px 12px;
           box-shadow: inset #57A8FA 0 0 40px 10px, #57A8FA 0 0 24px 12px;
 }
@@ -1048,9 +1049,9 @@ footer {
 }
 
 /*при наведении на фигуру*/
-.circle:hover,
-.circle1:hover,
-.circle2:hover {
+.circle:hover, .circle:focus,
+.circle1:hover, .circle1:focus,
+.circle2:hover, .circle2:focus {
   -webkit-box-shadow: inset var(--primary) 0 0 40px 10px, var(--primary) 0 0 24px 12px;
           box-shadow: inset var(--primary) 0 0 40px 10px, var(--primary) 0 0 24px 12px;
 }
@@ -1139,7 +1140,7 @@ footer {
   -webkit-transition: all 300ms ease;
   transition: all 300ms ease;
 }
-.social-list_item:hover {
+.social-list_item:hover, .social-list_item:focus {
   -webkit-box-shadow: inset var(--primary) 0 0 20px 5px, var(--primary) 0 0 22px 7px;
           box-shadow: inset var(--primary) 0 0 20px 5px, var(--primary) 0 0 22px 7px;
 }

@@ -104,13 +104,14 @@
 			justify-content: space-around;
 			text-align: center;
 			.person_name_img{
+				width: 50%;
 				border-radius: 50%;
 			}
 			.person_attitude{
 				opacity: .5;
 			}
 		}
-		&:hover{
+		&:hover, &:focus{
 			box-shadow: 8px 8px 72px rgba(0, 2, 7, 0.5), 
 			inset -4px -4px 26px rgba(20, 89, 117, 0.2), 
 			inset 4px 4px 19px rgba(255, 255, 255, 0.15);

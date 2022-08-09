@@ -47,7 +47,7 @@
 		border-radius: 16px;
 		overflow: hidden;
 		
-		&:hover{
+		&:hover, &:focus{
 			border-color: var(--primary);
 			box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.15);
 			.category-list-item_img{
